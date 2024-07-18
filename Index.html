@@ -36,6 +36,20 @@
             list-style: none;
             margin: 0 20px;
         }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+        nav ul li a:hover {
+            color: rgb(181, 181, 224);
+            font-size: 1.04rem;
+        }
+        main hr{
+            border: 0;
+            background: #9c97f1;
+            height: 1.2px;
+            margin: 40px 84px;
+        }
 
         .left {
             font-size: 1.5rem;
@@ -44,20 +58,53 @@
         .FirstSection{
             display: flex;
             justify-content: space-around;
-            margin: 23px 0;
+            align-items: center;
+            margin: 100px 0;
         }
-        .FirstSection div{
+        .FirstSection > div{
             width: 30%;
         }
 
         .leftSection{
-            background-color: rgb(35, 27, 103);
-        
+            font-size: 2.5rem;
         }
         .rightSection img{
-            width: 80%;
-            margin: 50px;
+            width: 100%;
+            margin: 60px;
             
+        }
+        .purple{
+            color: rgb(170, 107, 228);
+        }
+        .text-gray{
+            color: gray;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 10px;
+        }
+        #element{
+            color: rgb(170, 107, 228);
+        }
+        .secondSection{
+            max-width: 80vw;
+            margin: auto;
+        }
+        .secondSection h1{
+            font-size: 1rem;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            height: 100vh;
+        }
+        
+        .secondSection .box{
+            background: white;
+            width: 80vw;
+            height: 2px;
+            margin: 56px 0;
+        }
+
+        .secondSection .verticle{
+            height: 93px;
+            width: 1px;
+            background-color: white;
         }
     </style>
 </head>
@@ -68,11 +115,11 @@
             <div class="left">Anubhab's Portfolio</div>
             <div class="right">
                 <ul>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Services</li>
-                    <li>Projects</li>
-                    <li>Contact Me</li>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contact Me</a></li>
                 </ul>
             </div>
         </nav>
@@ -80,14 +127,36 @@
     <main>
         <section class="FirstSection">
             <div class="leftSection">
-                Hi!!! My name is Anubhab
-                <div>and i am a web developer</div>
+                Hi!!!My name is <span class="purple">Anubhab</span> 
+                <div>and i am a passionate</div>
+                <!-- <div>web developer</div> -->
+                <span id="element"></span>
             </div>
             <div class="rightSection">
-                <img src="https://img.freepik.com/free-vector/colourful-illustration-programmer-working_23-2148281410.jpg?w=740&t=st=1721107289~exp=1721107889~hmac=eb08ea2144592a4d40c9433d60ef7d84e5f78c20c39e000452e770e9e4059ae2" alt="">
+                <img src="https://firstfloor.agency/wp-content/uploads/2022/06/440-Converted-2048x1606.png" alt="">
+            </div>
+        </section>
+        <hr>
+        <section class="secondSection">
+            <span class="text-gray">What I have done so far</span>
+            <h1>Work Experience</h1>
+
+            <div class="box">
+                <div class="verticle"></div>
+                <div class="verticle"></div>
+                <div class="verticle"></div>
+                <div class="verticle"></div>
             </div>
         </section>
     </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['web developer', 'graphic designer', 'web designer.'],
+      typeSpeed: 50,
+    });
+  </script>
 </body>
 
 </html>
