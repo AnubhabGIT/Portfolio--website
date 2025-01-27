@@ -36,15 +36,18 @@
             list-style: none;
             margin: 0 20px;
         }
+
         nav ul li a {
             text-decoration: none;
             color: white;
         }
+
         nav ul li a:hover {
             color: rgb(181, 181, 224);
             font-size: 1.04rem;
         }
-        main hr{
+
+        main hr {
             border: 0;
             background: #9c97f1;
             height: 1.2px;
@@ -55,56 +58,58 @@
             font-size: 1.5rem;
 
         }
-        .FirstSection{
+
+        .FirstSection {
             display: flex;
             justify-content: space-around;
             align-items: center;
-            margin: 100px 0;
+            margin: 20px 0;
         }
-        .FirstSection > div{
+
+        .FirstSection>div {
             width: 30%;
         }
 
-        .leftSection{
+        .leftSection {
             font-size: 2.5rem;
         }
-        .rightSection img{
+
+        .rightSection img {
             width: 100%;
-            margin: 60px;
-            
+            margin: 50px;
+
         }
-        .purple{
+
+        .purple {
             color: rgb(170, 107, 228);
         }
-        .text-gray{
+
+        .text-gray {
             color: gray;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             font-size: 10px;
         }
-        #element{
+
+        #element {
             color: rgb(170, 107, 228);
         }
-        .secondSection{
+
+        .secondSection {
             max-width: 80vw;
             margin: auto;
         }
-        .secondSection h1{
+
+        .secondSection h1 {
             font-size: 1rem;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             height: 100vh;
         }
-        
-        .secondSection .box{
+
+        .secondSection .box {
             background: white;
             width: 80vw;
             height: 2px;
             margin: 56px 0;
-        }
-
-        .secondSection .verticle{
-            height: 93px;
-            width: 1px;
-            background-color: white;
         }
     </style>
 </head>
@@ -127,36 +132,29 @@
     <main>
         <section class="FirstSection">
             <div class="leftSection">
-                Hi!!!My name is <span class="purple">Anubhab</span> 
+                Hi!!!My name is <span class="purple">Anubhab</span>
                 <div>and i am a passionate</div>
-                <!-- <div>web developer</div> -->
                 <span id="element"></span>
             </div>
             <div class="rightSection">
-                <img src="https://firstfloor.agency/wp-content/uploads/2022/06/440-Converted-2048x1606.png" alt="">
+                <img src="./flexy-young-man-programming-on-laptop.png" alt="">
             </div>
         </section>
         <hr>
         <section class="secondSection">
             <span class="text-gray">What I have done so far</span>
             <h1>Work Experience</h1>
-
-            <div class="box">
-                <div class="verticle"></div>
-                <div class="verticle"></div>
-                <div class="verticle"></div>
-                <div class="verticle"></div>
-            </div>
+ 
         </section>
     </main>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <!-- Setup and start animation! -->
-  <script>
-    var typed = new Typed('#element', {
-      strings: ['web developer', 'graphic designer', 'web designer.'],
-      typeSpeed: 50,
-    });
-  </script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['web developer', 'graphic designer', 'web designer.'],
+            typeSpeed: 50,
+        });
+    </script>
 </body>
 
 </html>
